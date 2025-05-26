@@ -1,5 +1,5 @@
 import axios from "axios";
-import 'dotenv/config'
+import 'dotenv/config';
 
 // async function Personne() {
 //     const res = await axios.get("http://localhost:3000/api/test");
@@ -38,4 +38,4 @@ console.log(res.data)
 }
 
 export const dynamic ="force-dynamic";
-export default Personne();
+export default Personne;

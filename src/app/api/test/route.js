@@ -1,6 +1,7 @@
 export async function GET() {
 
     const data = {
+        "nom":"Dupond",
         "prenom":"Fred",
         "ville":"Paris",
         "panier":[
