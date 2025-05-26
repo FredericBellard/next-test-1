@@ -15,14 +15,13 @@ import 'dotenv/config'
 
 // export default async function Personne({ params }) {
 //   const id  = await params;
+async function Personne() {
+  // const id  = 5;
 
-  export default async function Personne() {
-  const id  = 5;
-
-  console.log("******")
-  console.log(process.env.BASE_URL)
-  console.log(id);
-  const url= $(process.env.BASE_URL/api/test)
+  // console.log("******")
+  // console.log(process.env.BASE_URL)
+  // console.log(id);
+  const url = `${process.env.BASE_URL}/api/test`;
   const res = await axios.get(url);
 console.log(res.data)
   const nom = res.data.userSimple.nom
@@ -38,3 +37,5 @@ console.log(res.data)
   )
 }
 
+export const dynamic ="force-dynamic";
+export default Personne();
